@@ -1,0 +1,7 @@
+{
+  "name": "cspMedicoApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
