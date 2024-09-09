@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+      defaultHref="/"
+      text=""
+      color="light">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Pacientes con reserva</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <ion-card class="animate-fade-up animate-once animate-duration-500 animate-ease-linear">
+    <ion-card-header>
+      <ion-card-title>Paciente</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-input type="text" label="Nombre" labelPlacement="floating" value="Raul Escobar"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="email" label="Email:" labelPlacement="floating" value="ra.escobar@duocuc.cl"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" label="Fecha:" labelPlacement="floating" value="12/11/24"
+          ></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" label="Hora:" labelPlacement="floating" value="17:00"
+          ></ion-input>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+    <div style="text-align: center; padding-bottom: 20px;">
+      <ion-button (click)="enviar()" fill="solid" shape="round" class="boton">
+        Ir a Cita
+      </ion-button>
+    </div>
+  </ion-card>
+</ion-content>
